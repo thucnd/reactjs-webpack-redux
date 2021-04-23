@@ -1,0 +1,68 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": [
+        "jsx-a11y",
+        "react",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "semi": 0,
+        "import/imports-first": 0,
+        "import/newline-after-import": 0,
+        "import/no-dynamic-require": 0,
+        "import/no-extraneous-dependencies": 0,
+        "import/no-named-as-default": 0,
+        "import/no-unresolved": 2,
+        "import/no-webpack-loader-syntax": 0,
+        "import/prefer-default-export": 0,
+        "linebreak-style": 0,
+        "indent": 0,
+        "react/jsx-indent": [
+            "error",
+            2
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            2
+        ],
+        "class-methods-use-this": 0,
+        "no-console": 0, //Do not disable console
+        "no-debugger": 0, //Disable debugger
+        "react/prefer-stateless-function": 0,
+        "react/destructuring-assignment": 0,
+        "react/prop-types": 0,
+        "react/jsx-props-no-spreading": 0
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}
